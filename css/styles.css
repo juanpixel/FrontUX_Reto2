@@ -47,10 +47,19 @@ span{
 }
 
 li{
-    display: flex;
     margin-bottom: 24px;
+    position: relative;
+    list-style: none;
+    
+    
+
+    & span{
+        display: inline-block;
+        vertical-align:top;
+    }
 
     & div{
+        display: inline-block;
         margin-left: 12px;
     }
 }
@@ -58,13 +67,16 @@ li{
 footer{
     background-color: #6E1413;
     padding: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
     color: white;
+    text-align: center;
+
+    & h2{
+        display: inline-block;
+    }
 
     & img{
         width: 20px;
+
     }
 }
